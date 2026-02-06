@@ -1,0 +1,13 @@
+
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 320px;
+    margin-left: 320px;
+}
+.box{
+    height: 40px;
+    width: 45px;
+    border: 1px solid black;
+}
