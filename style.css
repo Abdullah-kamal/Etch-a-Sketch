@@ -1,13 +1,25 @@
 
+
 #container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin-right: 320px;
-    margin-left: 320px;
+    justify-content: center;
 }
 .box{
     height: 40px;
     width: 45px;
     border: 1px solid black;
+}
+.box:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+
+#myButton{
+    display: block;
+    padding: 20px;
+    border-radius: 5%;
+    margin: 0 auto;
+}
+#myButton:hover{
+    background-color: hsl(0, 0%, 90%);
 }
