@@ -48,21 +48,25 @@ function generateGrid() {
 
 let myBox = document.getElementsByClassName("box");
 
-let r = Math.floor(Math.random() * 255);
-let g = Math.floor(Math.random() * 255);
-let b = Math.floor(Math.random() * 255);
-
-// container.addEventListener("mouseover", (event) => {
-//   event.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-// })
-
-// container.addEventListener("mouseout", (event) => {
-//   event.target.style.backgroundColor = "white";
-// })
+function r() {
+  let r = Math.floor(Math.random() * 255);
+  return r;
+}
+function g(){
+  let g = Math.floor(Math.random() * 255);
+  return g;
+}
+function b(){
+  let b = Math.floor(Math.random() * 255);
+  return b;
+}
 
 Array.from(container.children).forEach((c) => {
   c.addEventListener("mouseover", (event) => {
-    event.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    let red = r();
+    let green = g();
+    let blue = b();
+    event.target.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
   });
   c.addEventListener("mouseout", (event) => {
     event.target.style.backgroundColor = "white";
